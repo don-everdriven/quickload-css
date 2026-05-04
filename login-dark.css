@@ -165,6 +165,10 @@ ul {
   display: none;
 }
 
+#companyLogo {
+  filter: brightness(0) invert(1);
+}
+
 #simplemodal-container .simplemodal-data {
   padding: 5px 8px;
   overflow: hidden;
@@ -832,12 +836,7 @@ html {
   text-align: left;
 }
 
-.unified_container
-  .row
-  .panel-default
-  .panel-body
-  > .buttons
-  button {
+.unified_container .row .panel-default .panel-body > .buttons button {
   background-image: none;
   background-color: #8585fc !important;
   border: none;
@@ -870,38 +869,18 @@ html {
 
 @media screen and (-ms-high-contrast: active) {
   .unified_container .row .panel-default #api .accountButton,
-  .unified_container
-    .row
-    .panel-default
-    .panel-body
-    > .buttons
-    button {
+  .unified_container .row .panel-default .panel-body > .buttons button {
     border: 1px dashed #fff;
   }
 
   .unified_container .row .panel-default #api .accountButton:hover,
-  .unified_container
-    .row
-    .panel-default
-    .panel-body
-    > .buttons
-    button:hover {
+  .unified_container .row .panel-default .panel-body > .buttons button:hover {
     border: 1px solid #fff;
   }
 }
 
-.unified_container
-  .row
-  .panel-default
-  .panel-body
-  > .buttons
-  button:focus,
-.unified_container
-  .row
-  .panel-default
-  .panel-body
-  > .buttons
-  button:hover {
+.unified_container .row .panel-default .panel-body > .buttons button:focus,
+.unified_container .row .panel-default .panel-body > .buttons button:hover {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1301,12 +1280,7 @@ html {
     float: left;
   }
 
-  .unified_container
-    .row
-    .panel-default
-    .panel-body
-    > .buttons
-    #next {
+  .unified_container .row .panel-default .panel-body > .buttons #next {
     width: auto;
     text-indent: -4px;
     height: 42px !important;
@@ -1495,7 +1469,12 @@ button.accountButton:hover {
   display: block;
 }
 
-.unified_container .row .panel-default .panel-body > .buttons button.biometric-button {
+.unified_container
+  .row
+  .panel-default
+  .panel-body
+  > .buttons
+  button.biometric-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1505,7 +1484,12 @@ button.accountButton:hover {
   color: #8585fc !important;
 }
 
-.unified_container .row .panel-default .panel-body > .buttons button.biometric-button::before {
+.unified_container
+  .row
+  .panel-default
+  .panel-body
+  > .buttons
+  button.biometric-button::before {
   content: url(#{BASE_STORAGE_URL}#/img/FingerprintFilled.svg);
   display: inline-block;
   width: 24px;
