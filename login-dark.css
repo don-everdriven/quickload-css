@@ -165,10 +165,6 @@ ul {
   display: none;
 }
 
-#companyLogo {
-  filter: brightness(0) invert(1);
-}
-
 #simplemodal-container .simplemodal-data {
   padding: 5px 8px;
   overflow: hidden;
@@ -746,6 +742,7 @@ html {
   margin-bottom: 16px;
   margin-top: 0 !important;
   height: auto;
+  filter: brightness(0) invert(1);
 }
 
 .version-text {
